@@ -1,0 +1,21 @@
+<! DOCTYPE html>
+<html lang = "fr">
+<head>
+    <meta charset ="UTF-8">
+    <meta name = "viewport" content ="width=device-width, initial-scale = 1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Mon App</title>
+</head>
+<body>
+    <div>
+        <h1>Login Page</h1>
+        <form action = "{{ url_for('confirmation')}}" method ="POST">
+            <p>{{message}}</p>
+            <label for="">Nom</label>
+            <input type="text" name="nom" id="nom" required>
+            <label for="">Matricule</label>
+            <input type="text" name="matricule" id="matricule" required>
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
+</body>

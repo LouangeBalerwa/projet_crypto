@@ -1,0 +1,41 @@
+<! DOCTYPE html>
+<html lang = "fr">
+<head>
+    <meta charset ="UTF-8">
+    <meta charset ="UTF-8">
+    <meta name = "viewport" content ="width=device-width, initial-scale = 1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Mon App</title>
+   
+</head>
+<body >
+    <section id="enregistrement">
+        <h2>Modifier Etudiant</h2>
+    <form action = "/mise_a_jour_etudiant/{{etudiant_select.0}}" method ="POST">
+       
+        <p>
+            <label for = "nom">Nom : </label>
+            <input type = "texte" name ="nom" id = "nom" value ={{etudiant_select.1}}>
+        </p>
+        <p>
+            <label for = "postenom">Poste_nom : </label>
+            <input type = "texte" name ="postenom" id = "postenom" value ={{etudiant_select.2}}>
+        </p>
+        <p>
+            <label for = "faculte">Faculte : </label>
+            <input type = "texte" name ="faculte" id = "faculte" value ={{etudiant_select.3}}>
+        </p>
+        <p>
+            <label for = "date_ns">Date_naissance : </label>
+            <input type = "date" name ="date_ns" id = "date_ns" value ={{etudiant_select.4}}>
+        </p>
+
+        <p>
+            <input type="submit" value ="Envoyer">
+        </p>
+
+
+    </form>
+</section>
+</body>
+</html>

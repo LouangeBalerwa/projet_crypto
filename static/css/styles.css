@@ -1,0 +1,229 @@
+#formulaire {
+    max-width: 300;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+  }
+  
+#formulaire form {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 25px;
+    border-radius: 6px;
+    flex-direction: column;
+    width: 350px;
+  }
+  
+  #formulaire form label {
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+  
+  #formulaire form input {
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid transparent;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    outline: 0;
+  }
+  
+  #formulaire form input:focus {
+    outline: 1px solid #27ae60;
+  }
+  
+  #formulaire form input[type="submit"] {
+    margin-top: 15px;
+    color: #fff;
+    background-color: #27ae60;
+    border: 1px solid #27ae60;
+  }
+
+h1{
+    text-align: center; 
+}
+.btn_save{
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 3px;
+    margin: 30px;
+    font-size: 15px;
+    text-decoration: none
+    
+}
+.tableau{
+    
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 2px solid #009879;
+    padding: 5px;
+    margin: 10 auto;
+    justify-content: center;
+}
+thead{
+    padding: 30px;
+}
+tbody{
+    border-bottom: 1px solid #dddddd;
+}
+thead th{
+    text-align: left;
+    background: #009879;
+    color: #fff;
+}
+
+th,td{
+    padding: 10px;
+}
+.btn_edit{
+    background-color: rgb(219, 216, 6);
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+    text-decoration: none;
+}
+.btn_supprime{
+    background-color: red;
+    color: #fff;
+    border-radius: 3px;
+    padding: 5px;
+    text-decoration: none;
+}
+p{
+    width: 50%;
+    text-align: left;
+    margin: 10px;
+    font-size: 30px;
+}
+.t_form{
+    text-align: left;
+}
+#sub{
+    text-align: center;
+    color: white;
+    background-color: #009879;
+    border-radius: 5px;
+    font-size: 30px;
+    margin-left: 30%;
+}
+tfoot{
+    text-align: center;
+    background: #009879;
+    color: #fff;
+    
+}
+/* ==================================== */
+/* CSS */
+.modal{
+    display: none; /* Par défaut, la fenêtre modale est cachée */
+    position: fixed; /* Position fixe pour rester au-dessus des autres éléments */
+    z-index: 1; /* Z-index élevé pour rester au-dessus des autres éléments */
+    left: 0;
+    top: 0;
+    width: 100%; /* Largeur et hauteur pour couvrir toute la page */
+    height: 100%;
+    overflow: auto; /* Pour permettre le défilement si nécessaire */
+    background-color: rgba(0,0,0,0.4); /* Couleur de fond avec opacité */
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% du haut et centré */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Peut être modifié selon vos besoins */
+  }
+
+/* ====================================== */
+
+
+#enregistrement {
+    max-width: 300;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+  }
+  
+#enregistrement form {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 25px;
+    border-radius: 6px;
+    flex-direction: column;
+    width: 350px;
+  }
+  
+  #enregistrement form label {
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+  
+  #enregistrementform input {
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid transparent;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    outline: 0;
+  }
+  
+  #enregistrement form input:focus {
+    outline: 1px solid #27ae60;
+  }
+  
+  #enregistrement form input[type="submit"] {
+    margin-top: 15px;
+    color: #fff;
+    background-color: #27ae60;
+    border: 1px solid #27ae60;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #27ae60;
+    width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  div {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+  }
+  
+  button {
+    margin: 20px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #333;
+  }

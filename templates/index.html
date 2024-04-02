@@ -1,0 +1,57 @@
+<! DOCTYPE html>
+
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content ="width=device-width, initial-scale = 1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Mon App</title>
+</head>
+{% with messages_test = get_flashed_messages() %}
+{% if messages_test %}
+{% for message in messages_test %}
+    {%print(messsage)%}
+    <h2>{{ messsage}}</h2>
+{% endfor %}
+{% endif %}
+{% endwith %}
+
+<body>
+    
+    <h1> LISTE DES ETUDIANTS <a href ="/to_save_std" class="btn_save">Ajouter</a></h1>
+    
+    <table  class="tableau" >
+        <thead>
+            <tr>
+                <th>MATRICULE</th>
+                <th>NOM</th>
+                <th>POST-NOM</th>
+                <th>FACULTE</th>
+                <th>DATE</th>
+                <th>ACTION</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for ligne in liste_etudiant %}
+                <tr>
+                    <td>{{ ligne[0] }}</td>
+                    <td>{{ ligne[1] }}</td>
+                    <td>{{ ligne[2] }}</td>
+                    <td>{{ ligne[3] }}</td>
+                    <td>{{ ligne[4] }}</td>
+                    <td><a href="/editer/{{ligne[0]}}" class="btn_edit">Editer</a>
+                        <a href="/supprimer/{{ligne[0]}}" class="btn_supprime">Supprimer</a></td>
+                </tr>
+            {% endfor %}
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="6">
+                    Liste des Etudiants Escrits
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<! DOCTYPE html>
+<html lang = "fr">
+<head>
+    <meta charset ="UTF-8">
+    <meta name = "viewport" content ="width=device-width, initial-scale = 1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Mon App</title>
+</head>
+<body >
+    <section id="formulaire">
+    <h1 class ="t_form">Enregistrement Etudiant</h1>
+    <form action = "{{ url_for('save_etudiant')}}" method ="POST">
+
+        <p>
+            <label for = "matricule">Matricule : </label>
+            <input type = "texte" name ="matricule" id = "matricule">
+        </p>
+
+        <p>
+            <label for = "nom">Nom : </label>
+            <input type = "texte" name ="nom" id = "nom">
+        </p>
+
+        <p>
+            <label for = "postenom">Poste_nom : </label>
+            <input type = "texte" name ="postenom" id = "postenom">
+        </p>
+        <p>
+            <label for = "faculte">Faculte : </label>
+            <input type = "texte" name ="faculte" id = "faculte">
+        </p>
+        <p>
+            <label for = "date_ns">Date_naissance : </label>
+            <input type = "date" name ="date_ns" id = "date_ns">
+        </p>
+        <p>
+            <input type="submit" value ="Envoyer" id ="sub">
+        </p>
+    </form>
+</section>
+</body>
+</html>
