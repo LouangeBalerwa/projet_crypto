@@ -5,16 +5,8 @@
     <meta charset="UTF-8">
     <meta name = "viewport" content ="width=device-width, initial-scale = 1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-    <title>Mon App</title>
+    <title>Gestion Etudiant</title>
 </head>
-{% with messages_test = get_flashed_messages() %}
-{% if messages_test %}
-{% for message in messages_test %}
-    {%print(messsage)%}
-    <h2>{{ messsage}}</h2>
-{% endfor %}
-{% endif %}
-{% endwith %}
 
 <body>
     

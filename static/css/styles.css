@@ -31,18 +31,21 @@
   }
   
   #formulaire form input:focus {
-    outline: 1px solid #27ae60;
+    outline: 1px solid #009879;
   }
   
   #formulaire form input[type="submit"] {
     margin-top: 15px;
     color: #fff;
-    background-color: #27ae60;
-    border: 1px solid #27ae60;
+    background-color: #009879;
+    border: 1px solid #009879;
   }
 
 h1{
     text-align: center; 
+}
+.msg{
+    text-align: center;
 }
 .btn_save{
     background-color: red;
@@ -175,21 +178,21 @@ tfoot{
   }
   
   #enregistrement form input:focus {
-    outline: 1px solid #27ae60;
+    outline: 1px solid #009879;
   }
   
   #enregistrement form input[type="submit"] {
     margin-top: 15px;
     color: #fff;
-    background-color: #27ae60;
-    border: 1px solid #27ae60;
+    background-color: #009879;
+    border: 1px solid #009879;
   }
 
   form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #27ae60;
+    background-color: #009879;
     width: 500px;
     margin: 20px auto;
     padding: 20px;

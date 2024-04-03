@@ -1,5 +1,5 @@
 # L'étape Shift-Rows dans AES consiste à déplacer les lignes de la matrice d'état.
-# En Python, vous pouvez implémenter l'étape Shift-Rows comme suit :
+
 
 def shift_rows_AES(state):
    
@@ -30,5 +30,5 @@ original_row = [0x43, 0x5a, 0x31, 0x37]
 shifted_row = original_row[3:] + original_row[:3]
 
 
-print(f"Original row: {original_row}")
-print(f"Shifted row: {shifted_row}")
+print(f"Avanr decalage: {original_row}")
+print(f"Apres decalage de ligne: {shifted_row}")
